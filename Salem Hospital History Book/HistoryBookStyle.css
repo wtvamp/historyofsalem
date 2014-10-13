@@ -1,0 +1,291 @@
+﻿body 
+{
+    background: #CCC url(./images/wood.jpg) repeat top left;
+}
+.booklet{
+
+}
+p, ul, li 
+{
+    font-size: 14px;
+}
+.booklet .b-page-cover 
+{
+    background:transparent url(./images/front_cover2.png) no-repeat top left;
+}
+
+/* This is the background to the individual pages */
+.booklet .b-wrap-left{
+	background:transparent url(./images/history_page.png) no-repeat top left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.booklet .b-wrap-right{
+	background:transparent url(./images/history_page.png) no-repeat top left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+
+/* This is the page numbers on the bottom and the border above them */
+.booklet .b-counter
+{
+    bottom:10px;
+    position:absolute;
+    display:block;
+    width:90%;
+    height:20px;
+    border-top:1px solid #ddd;
+    color:#222;
+    text-align:center;
+    font-size:12px;
+    padding:5px 0 0;
+    background:transparent;
+    -moz-box-shadow:0px -1px 1px #fff;
+    -webkit-box-shadow:0px -1px 1px #fff;
+    box-shadow:0px -1px 1px #fff;
+    opacity:0.8;
+}
+
+/* This is the background to the book, with pages and cover */
+.book_wrapper{
+	margin:0 auto;
+    width:878px;
+    padding-top:40px; 
+	height:540px;
+	position:relative;
+    top: -15px;
+    left: -2px;
+}
+
+a#next_page_button,
+a#prev_page_button{
+	display:none;
+	position:absolute;
+	width:41px;
+	height:40px;
+	cursor:pointer;
+	margin-top:-20px;
+	top:50%;
+	background:transparent url(./images/buttons.png) no-repeat 0px -40px;
+}
+a#prev_page_button{
+	left:-30px;
+}
+a#next_page_button{
+	right:-30px;
+	background-position:-41px -40px;
+}
+a#next_page_button:hover{
+	background-position:-41px 0px;
+}
+a#prev_page_button:hover{
+	background-position:0px 0px;
+}
+
+.loading{
+	width:160px;
+	height:56px;
+	position: absolute;
+	top:49%;
+	margin-top:-28px;
+	right:100px;
+	line-height:56px;
+	color:#fff;
+	padding-left:60px;
+	font-size:15px;
+	background: #000 url(./images/ajax-loader.gif) no-repeat 10px 50%;
+	opacity: 0.7;
+	z-index:9999;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+
+.timeline-event 
+{
+    height:40px;width:40px;background: url(./images/timeline_button.png);float:left;position:relative;top:-26px;
+}
+.timeline-event-tooltip
+{
+    display: none;
+    background-color: #638ea7;
+    padding: 5px;
+    border: 2px solid blue;
+    z-index: 50;
+    position: absolute;
+    top: 0px;
+    left: 27px;
+    width: 100px;
+    font: message-box;
+    font-size:small;
+}
+.timelineScroll
+{
+    border-top: 10px solid #C6A38D;
+    width: 3020px;
+    height: 100px;
+    top: 20px;
+    position: relative;
+    font-size: small;
+}
+
+#timelineCursor 
+{
+    position:relative;top:-33px; left:-942px;
+}
+
+
+
+/* The hover for the front of the cover */
+.hoverDiv 
+{
+    position:relative;
+    height:222px;
+    width:260px;
+}
+#coverImageA {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+#coverImageB {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#franz1 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 60;
+}
+
+#franz2 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
+#franz3 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 40;
+}
+
+#franz4 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 30;
+}
+
+#franz5
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+
+#franz6 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+#wedel1 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+#wedel2 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+#morseGround1 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+#morseGround2 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+.imageFade1 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+}
+.imageFade2
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+#building1 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 60;
+}
+
+#building2 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
+#building3 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 40;
+}
+
+#building4 
+{
+    position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 30;
+}
